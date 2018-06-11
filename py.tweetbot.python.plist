@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<!-- label* -->
+<key>Label</key>
+<string>py.tweetbot.python</string>
+
+<!-- script* -->
+<key>ProgramArguments</key>
+<array>
+<string>/Users/manabesoya/.pyenv/shims/python</string>
+<string>/Users/manabesoya/scripts/tweetbot.py</string>
+</array>
+
+<!-- launchctl loadしたタイミングで実行するか -->
+<key>RunAtLoad</key>
+<true/>
+
+<!-- いつ実行するのか -->
+<key>StartInterval</key>
+<integer>30</integer>
+
+<!-- ログ指定 -->
+<key>StandardErrorPath</key>
+<string>/Users/manabesoya/scripts/err.log</string>
+<key>StandardOutPath</key>
+<string>/Users/manabesoya/scripts/log.log</string>
+</dict>
+</plist>
