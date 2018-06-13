@@ -29,6 +29,4 @@ i  = random.randint(0,len(list)-1)
 
 #ツイートのみ
 status=list[i] #投稿するツイート
-print(firstlink + status)
-"""t.statuses.update(status=firstlink + status) #Twitterに投稿
-"""
+t.statuses.update(status="今回のおすすめ" + firstlink + status) #Twitterに投稿

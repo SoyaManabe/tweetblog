@@ -18,8 +18,27 @@
 <true/>
 
 <!-- いつ実行するのか -->
-<key>StartInterval</key>
-<integer>30</integer>
+<key>StartCalendarInterval</key>
+   <array>
+       <dict>
+           <key>Hour</key>
+           <integer>7</integer>
+           <key>Minute</key>
+           <integer>0</integer>
+       </dict>
+       <dict>
+           <key>Hour</key>
+           <integer>12</integer>
+           <key>Minute</key>
+           <integer>0</integer>
+       </dict>
+       <dict>
+           <key>Hour</key>
+           <integer>17</integer>
+           <key>Minute</key>
+           <integer>0</integer>
+       </dict>
+    </array>
 
 <!-- ログ指定 -->
 <key>StandardErrorPath</key>
