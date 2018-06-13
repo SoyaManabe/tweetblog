@@ -8,6 +8,7 @@ print(sys.version_info)
 import twitter
 import random
 
+firstlink = "https://www.so-hack.com/entry/"
 
 auth = twitter.OAuth(consumer_key="i04bQrT9ZMBMcmR5Jr3KCM7DM",
 consumer_secret="xgAox7qp3xROcJVcIiRjzhxSneIoQDNzxyF0ttUVGjfnCRBJFS",
@@ -16,10 +17,18 @@ token_secret="uXFuB6tj3bBWVgPUNSr2d5SeIA6QTwpRuTvEL7KpcqrrW")
 
 t = twitter.Twitter(auth=auth)
 
-list = ["バイトやあ", "眠い", "こんにちは","おやすみ"]
+f = open('datas.txt')
+list = []
+for line in f:
+    list.append(line[:-1])
+f.close()
+i = len(list)
 
-i  = random.randint(0,len(list))
+
+i  = random.randint(0,len(list)-1)
 
 #ツイートのみ
 status=list[i] #投稿するツイート
-t.statuses.update(status=status) #Twitterに投稿
+print(firstlink + status)
+"""t.statuses.update(status=firstlink + status) #Twitterに投稿
+"""
