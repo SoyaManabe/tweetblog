@@ -17,7 +17,7 @@ token_secret="uXFuB6tj3bBWVgPUNSr2d5SeIA6QTwpRuTvEL7KpcqrrW")
 
 t = twitter.Twitter(auth=auth)
 
-f = open('datas.txt')
+f = open('/Users/manabesoya/Repos/tweetblog/datas.txt')
 list = []
 for line in f:
     list.append(line[:-1])
